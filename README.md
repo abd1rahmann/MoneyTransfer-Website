@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WebbUtveckling
 
 ## Description
@@ -15,3 +16,6 @@ The project is built with the following languages:
 ## Live Version
 
 You can visit the live version of the site [here](https://siliconcrypto.azurewebsites.net/).
+=======
+
+>>>>>>> 56be08dce35cb5813a61eebcdebad693c08b6e70
