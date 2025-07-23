@@ -1,7 +1,18 @@
 #contact-footer{
+ body.light & {
+      background-color: #f8f9fa; // ljusgrå för ljust tema
+      color: #212529;            // mörk text
+    }
 
+    body.dark & {
+      background-color: $gray-900; // behåll mörk
+      color: white;
+    }
+    
     .contact-footer-container{
-        background-color: $gray-900;
+        
+       
+       
         height: 497px;
         .container{
             display: grid;
@@ -137,3 +148,4 @@
         }
     }
 }
+

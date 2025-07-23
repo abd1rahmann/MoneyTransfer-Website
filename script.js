@@ -10,15 +10,7 @@ const toggleMenu = () => {
 }
 
 
-document.getElementById('theme-toggle-switch').addEventListener('change', function(event){
-    if(event.target.checked) {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-    } else {
-        document.body.classList.add('light-mode');
-        document.body.classList.remove('dark-mode');
-    }
-});
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -50,6 +42,33 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleSwitch = document.getElementById('theme-toggle-switch');
+  const body = document.body;
+
+  // Hämta sparat tema från localStorage, default till light
+  const savedTheme = localStorage.getItem('theme') || 'light';
+
+  // Sätt body-klass enligt sparat tema
+  body.classList.remove('light-theme', 'dark-theme');
+  body.classList.add(savedTheme + '-theme');
+
+  // Sätt toggle switch korrekt status
+  toggleSwitch.checked = savedTheme === 'dark';
+
+  toggleSwitch.addEventListener('change', () => {
+    if (toggleSwitch.checked) {
+      body.classList.remove('light-theme');
+      body.classList.add('dark-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      body.classList.remove('dark-theme');
+      body.classList.add('light-theme');
+      localStorage.setItem('theme', 'light');
+    }
+  });
 });
 
 

@@ -1,0 +1,89 @@
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+
+  header {
+    background-color: #f9f9f9;
+  }
+
+  .nav-link {
+    color: #000000 !important;
+  }
+}
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+
+  header {
+    background-color: #111111;
+  }
+
+  .nav-link {
+    color: #ffffff !important;
+  }
+}
+body.light-theme {
+  --how-bg: #f9f9f9;
+  --how-btn-bg: #ffffff;
+  --how-btn-color: #333333;
+  --how-btn-hover-bg: #007BFF;
+  --how-btn-hover-color: #ffffff;
+}
+
+body.dark-theme {
+  --how-bg: #1a1a1a;
+  --how-btn-bg: #333333;
+  --how-btn-color: #ffffff;
+  --how-btn-hover-bg: #007BFF;
+  --how-btn-hover-color: #ffffff;
+}
+
+
+body.light {
+  #contact-footer .contact-footer-container {
+    background-color: #f8f9fa;
+    color: #212529;
+
+    .left-left p,
+    .left-left .sub-container p,
+    .left-left .rights,
+    .right-right .nav-link,
+    .right-right .contact-us {
+      color: #212529 !important;
+    }
+
+    #subscribe-input {
+      background: rgba(0, 0, 0, 0.02);
+      color: #212529;
+    }
+
+    .subscribe i {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+body.dark {
+  #contact-footer .contact-footer-container {
+    background-color: $gray-900;
+    color: white;
+
+    .left-left p,
+    .left-left .sub-container p,
+    .left-left .rights,
+    .right-right .nav-link,
+    .right-right .contact-us {
+      color: white !important;
+    }
+
+    #subscribe-input {
+      background: rgba(255, 255, 255, 0.02);
+      color: white;
+    }
+
+    .subscribe i {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
