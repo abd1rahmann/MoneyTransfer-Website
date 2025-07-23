@@ -1,21 +1,16 @@
-<<<<<<< HEAD
-# WebbUtveckling
+# Money Transfer Website
 
-## Description
+A web-based application facilitating secure and swift money transfers between users.
 
-WebbUtveckling is a frontend site developed to showcase web development skills. The site incorporates modern design principles and interactive elements, focusing on user experience and interface design.
+## 🧰 Tech Stack
 
-## Languages
-
-The project is built with the following languages:
-- HTML
-- CSS
+- HTML5
 - SCSS
 - JavaScript
 
-## Live Version
+## 🚀 Features
 
-You can visit the live version of the site [here](https://siliconcrypto.azurewebsites.net/).
-=======
+- User registration and authentication
+- Transfer history and receipts
+- Real-time currency conversion
 
->>>>>>> 56be08dce35cb5813a61eebcdebad693c08b6e70
